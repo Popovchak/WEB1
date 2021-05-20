@@ -1,0 +1,12 @@
+{
+    "graphChartLabels": ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "graphChartDataRevenue": [10, 30, 60, 11000, 10500, 6000, 4000, 3500, 9000, 8500, 5000, 500],
+    "graphChartDataOrder": [1000, 3100, 10000, 14800, 6500, 4000, 4200, 7500, 9000, 8500, 6000, 2000],
+    "graphChartDataTax": [500, 4000, 10000, 15000, 12000, 6000, 7000, 11000, 10500, 8500, 6000, 5000],
+    "graphChartDataShipment": [2500, 3000, 6000, 11000, 10500, 6000, 7000, 2500, 2000, 12000, 4000, 2000],
+    "newVisitorsChartLabels": ["", "", "", "", "", ""],
+    "newVisitorsChartDataOld": [50, 75, 8, 25, 16, 18],
+    "newVisitorsChartDataNew": [4, 17, 18, 28, 22, 20],
+    "marketingCampaignChartLabels": ["Product Design", "Packaging", "Research", "Information"],
+    "marketingCampaignChartData": [23, 8, 52, 17]
+}

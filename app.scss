@@ -1,0 +1,399 @@
+@use "@material/drawer";
+@use "@material/list";
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/card";
+@use "@material/data-table/data-table";
+
+@include data-table.core-styles;
+@include data-table.theme-baseline;
+@include card.core-styles;
+@include icon-button.core-styles;
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include drawer.modal-core-styles;
+@include list.core-styles;
+
+$shadow: 0 10px 6px -6px rgb(151, 151, 151);
+$greyBorder: 1px solid #888888;
+$snowColor: snow;
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "PT Serif", serif;
+  color: #2f2e2e;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(235, 232, 232);
+}
+
+.app-bar {
+  position: absolute;
+  background-color: rgb(42, 64, 134);
+}
+
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+.mdc-drawer__header li {
+  list-style-type: none;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+
+  .main-content {
+    overflow: auto;
+    height: 100%;
+  }
+}
+
+.my-card-content {
+  padding: 0;
+}
+
+.my-card {
+  text-align: center;
+  height: 100px;
+  width: 223px;
+
+  .card-head {
+    padding: 10px;
+
+    .card-h {
+      margin: 0;
+    }
+
+    .card-p {
+      margin: 0;
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+
+  .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    a {
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    a:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+}
+
+.content-head-text {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .content-head-text-end {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.four-cards {
+  display: flex;
+  justify-content: space-around;
+
+  .little-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border: $greyBorder;
+    margin-bottom: 20px;
+    box-shadow: $shadow;
+    background-color: $snowColor;
+  }
+
+  .card-text {
+    display: block;
+    padding: 5px;
+    height: 20px;
+    border: $greyBorder;
+    border-radius: 3px;
+  }
+}
+
+.little-card > .material-icons {
+  font-size: 48px;
+}
+
+.graph {
+  margin: 0 auto;
+  width: 1200px;
+  height: 500px;
+  border: $greyBorder;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: $shadow;
+  background-color: $snowColor;
+
+  .graph-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+  }
+
+  .graph-body {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+
+    #graphChart {
+      display: block;
+      box-sizing: border-box;
+      height: 390px !important;
+      width: 1000px !important;
+    }
+  }
+}
+
+.table-clothes {
+  display: flex;
+  justify-content: center;
+}
+
+.first-table {
+  width: 90%;
+  margin-bottom: 20px;
+  box-shadow: $shadow;
+  border-color: #888888;
+  border-radius: 3px;
+
+  * {
+    border: 0;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  th {
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+td.paid {
+  background-color: #64f6ef;
+  border-radius: 6px;
+}
+
+td.pending {
+  background-color: #f9a52b;
+  border-radius: 6px;
+}
+
+td.failed {
+  background-color: #f94e09;
+  border-radius: 6px;
+}
+
+.map-chart {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+
+  .traffic {
+    width: 35%;
+    height: 360px;
+    border: $greyBorder;
+    border-radius: 3px;
+    box-shadow: $shadow;
+    background-color: $snowColor;
+
+    .traffic-head {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      border-bottom: $greyBorder;
+      height: 20%;
+    }
+
+    .traffic-table {
+      height: 100%;
+      width: 100%;
+
+      td {
+        text-align: center;
+
+        p {
+          margin: 0;
+          padding: 15px;
+          border-radius: 6px;
+        }
+        .direct {
+          background-color: rgb(27, 97, 226);
+        }
+        .refer {
+          background-color: rgb(27, 196, 226);
+        }
+        .social {
+          background-color: rgb(243, 229, 28);
+        }
+        .search {
+          background-color: rgb(114, 211, 24);
+        }
+        .internal {
+          background-color: rgb(211, 93, 24);
+        }
+      }
+
+      .traffic-table-img {
+        width: 75px;
+        height: 30px;
+      }
+    }
+  }
+
+  .map {
+    width: 55%;
+    height: 360px;
+    border: $greyBorder;
+    border-radius: 3px;
+    box-shadow: $shadow;
+    background-color: $snowColor;
+
+    .map-head {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      border-bottom: $greyBorder;
+      height: 20%;
+    }
+
+    .map-body {
+      display: flex;
+      height: 80%;
+    }
+
+    .map-main-img {
+      width: 70%;
+      height: 100%;
+      background-image: url("https://cdn.pixabay.com/photo/2013/07/12/12/54/world-map-146505_1280.png");
+      background-size: cover;
+      height: 99%;
+      width: 100%;
+      margin: 0;
+    }
+
+    .map-aside-img {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 100%;
+      border-left: $greyBorder;
+
+      div:last-child {
+        border: 0;
+      }
+
+      .aside-img {
+        display: flex;
+        justify-content: space-around;
+        height: 20%;
+        border-bottom: $greyBorder;
+      }
+    }
+  }
+}
+
+.second-chart {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+
+  .site-visits {
+    width: 500px;
+    height: 400px;
+    border: $greyBorder;
+    border-radius: 3px;
+    box-shadow: $shadow;
+    background-color: $snowColor;
+
+    .site-visits-body {
+      height: 80%;
+      justify-content: center;
+      align-items: center;
+
+      #newVisitorsChart {
+        height: 300px !important;
+      }
+    }
+  }
+
+  .marketing-campaign {
+    width: 500px;
+    height: 400px;
+    border: $greyBorder;
+    border-radius: 3px;
+    box-shadow: $shadow;
+    background-color: $snowColor;
+
+    .marketing-campaign-body {
+      height: 80%;
+      #marketingCampaignChart {
+        margin: 0 auto;
+        width: 300px !important;
+        height: 300px !important;
+      }
+    }
+  }
+}
+
+.second-chart-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: $greyBorder;
+  height: 20%;
+}

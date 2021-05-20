@@ -1,2 +1,0 @@
-cd D:\myProject
-cmd

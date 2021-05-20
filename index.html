@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <body>
+      <header
+        class="mdc-top-app-bar app-bar mdc-top-app-bar--fixed"
+        id="app-bar"
+      >
+        <div class="mdc-top-app-bar__row">
+          <section
+            class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
+          >
+            <button
+              class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+            >
+              menu
+            </button>
+            <button
+              class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+            >
+              notifications
+            </button>
+            <button
+              class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+            >
+              mark_email_unread
+            </button>
+            <button
+              class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+            >
+              leaderboard
+            </button>
+          </section>
+          <section
+            class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+            role="toolbar"
+          >
+            <button
+              class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+            >
+              search
+            </button>
+          </section>
+        </div>
+      </header>
+      <aside
+        class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust"
+      >
+        <div class="mdc-drawer__header">
+          <h3 class="mdc-drawer__title">SHOPPER</h3>
+          <h6 class="mdc-drawer__subtitle">BUY WITH HAPPINESS</h6>
+          <li class="mdc-list-divider" role="separator"></li>
+        </div>
+        <div class="mdc-drawer__content">
+          <div class="my-card">
+            <div class="card-head">
+              <h3 class="card-h">Orest Popovchak</h3>
+              
+            </div>
+            <button
+              class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+              title="Share"
+            >
+              person
+            </button>
+            <button
+              class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+              title="Share"
+            >
+              border_color
+            </button>
+            <button
+              class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+              title="More options"
+            >
+              exit_to_app
+            </button>
+          </div>
+          <div class="mdc-list">
+            <li class="mdc-list-divider" role="separator"></li>
+            <h3 class="mdc-list-item mdc-drawer__title">GENERAL</h3>
+            <a
+              class="mdc-list-item mdc-list-item--activated"
+              href="#"
+              aria-current="page"
+            >
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >speed</i
+              >
+              <span class="mdc-list-item__text">Dashboard</span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >keyboard_arrow_down</i
+              >
+            </a>
+            <div class="toolbar mdc-menu mdc-menu-surface" id="demo-menu">
+              <ul
+                class="mdc-list"
+                role="menu"
+                aria-hidden="true"
+                aria-orientation="vertical"
+                tabindex="-1"
+              >
+                <li>
+                  <ul class="mdc-menu__selection-group">
+                    <li class="mdc-list-item" role="menuitem">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span
+                        class="material-icons mdc-list-item__graphic mdc-menu__selection-group-icon"
+                      >
+                        trip_origin
+                      </span>
+                      <span class="mdc-list-item__text">Dashboard 1</span>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span
+                        class="material-icons mdc-list-item__graphic mdc-menu__selection-group-icon"
+                      >
+                        trip_origin
+                      </span>
+                      <span class="mdc-list-item__text">Dashboard 2</span>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span
+                        class="material-icons mdc-list-item__graphic mdc-menu__selection-group-icon"
+                      >
+                        trip_origin
+                      </span>
+                      <span class="mdc-list-item__text">Commin Soon</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >monitor</i
+              >
+              <span class="mdc-list-item__text">Layout</span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >keyboard_arrow_right</i
+              >
+            </a>
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >folder</i
+              >
+              <span class="mdc-list-item__text">Pages</span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >keyboard_arrow_right</i
+              >
+            </a>
+            <li class="mdc-list-divider" role="separator"></li>
+            <h3 class="mdc-list-item mdc-drawer__title">ELEMENTS</h3>
+            <a class="mdc-list-item" href="#" aria-current="page">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >insert_drive_file</i
+              >
+              <span class="mdc-list-item__text">Invoice</span>
+            </a>
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >signal_cellular_alt</i
+              >
+              <span class="mdc-list-item__text">Charts</span>
+            </a>
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >code</i
+              >
+              <span class="mdc-list-item__text">Snippets</span>
+            </a>
+            <a class="mdc-list-item" href="#" aria-current="page">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >construction</i
+              >
+              <span class="mdc-list-item__text">UI Widgets</span>
+            </a>
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >drive_file_rename_outline</i
+              >
+              <span class="mdc-list-item__text">Forms</span>
+            </a>
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >grid_view</i
+              >
+              <span class="mdc-list-item__text">Components</span>
+            </a>
+            <a class="mdc-list-item" href="#" aria-current="page">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >extension</i
+              >
+              <span class="mdc-list-item__text">Plugin</span>
+            </a>
+            <a class="mdc-list-item" href="#">
+              <span class="mdc-list-item__ripple"></span>
+              <i
+                class="material-icons mdc-list-item__graphic"
+                aria-hidden="true"
+                >email</i
+              >
+              <span class="mdc-list-item__text">Email</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+        <main class="main-content" id="main-content">
+          <div class="content-head-text">
+            <p class="content-head-text-firstp">Dashboard/Home/All Site View</p>
+            <div class="content-head-text-end">
+              <p>Reporting Period</p>
+              <div class="dropdown">
+                <button class="dropbtn">Last 30 Day`s ▼</button>
+                <div class="dropdown-content">
+                  <a href="#">Last week </a>
+                  <a href="#">Last year</a>
+                  <a href="#">Last 3 months</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="four-cards">
+            <div class="little-card visitors">
+              <i class="material-icons">groups</i>
+              <p class="card-text">Visitors</p>
+              <p>&#8593; 125 K(+ 0.50%)</p>
+            </div>
+            <div class="little-card new-order">
+              <i class="material-icons">track_changes</i>
+              <p class="card-text">New order</p>
+              <p>28 K</p>
+            </div>
+            <div class="little-card sales">
+              <i class="material-icons">paid</i>
+              <p class="card-text">Sales</p>
+              <p>25 K</p>
+            </div>
+            <div class="little-card shipping">
+              <i class="material-icons">local_shipping</i>
+              <p class="card-text">Shipping</p>
+              <p>12 K</p>
+            </div>
+          </div>
+          <div class="graph">
+            <div class="graph-head">
+              <p>EARNING GRAPH OVERVIEW</p>
+              <div class="map-icons">
+                <i class="material-icons">refresh</i>
+                <i class="material-icons">keyboard_arrow_down</i>
+                <i class="material-icons">close</i>
+              </div>
+            </div>
+            <div class="graph-body">
+              <canvas id="graphChart"></canvas>
+            </div>
+          </div>
+          <div class="map-chart">
+            <div class="map">
+              <div class="map-head">
+                <p>TOP SEARCH ▼</p>
+                <div class="map-icons">
+                  <i class="material-icons">refresh</i>
+                  <i class="material-icons">keyboard_arrow_down</i>
+                  <i class="material-icons">close</i>
+                </div>
+              </div>
+              <div class="map-body">
+                <div class="map-main-img"></div>
+                <div class="map-aside-img">
+                  <div class="aside-img">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/f/f3/BlankMap-USA-states.PNG"
+                    />
+                    <p>America</p>
+                  </div>
+                  <div class="aside-img">
+                    <img
+                      src="https://www.vippng.com/png/detail/0-5272_uk-map-uk-map-transparent-white.png"
+                    />
+                    <p>U. Kingdom</p>
+                  </div>
+                  <div class="aside-img">
+                    <img src="https://vemaps.com/uploads/img/bd-03.png" />
+                    <p>Bangladesh</p>
+                  </div>
+                  <div class="aside-img">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Canada_blank_map.svg/1200px-Canada_blank_map.svg.png"
+                    />
+                    <p>Canada</p>
+                  </div>
+                  <div class="aside-img">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Map_of_Russian%2C_outline.svg/1280px-Map_of_Russian%2C_outline.svg.png"
+                    />
+                    <p>Russia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="traffic">
+              <div class="traffic-head">
+                <p>TRAFFIC SOURCES ▼</p>
+                <div class="traffic-icons">
+                  <i class="material-icons">keyboard_arrow_down</i>
+                  <i class="material-icons">close</i>
+                </div>
+              </div>
+              <div class="traffic-body">
+                <table class="traffic-table">
+                  <tr>
+                    <td class="traffic-table-text">
+                      <p class="direct">Direct</p>
+                    </td>
+                    <td>1200</td>
+                    <td>
+                      <img
+                        class="traffic-table-img"
+                        src="./images/blueChart.png"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="traffic-table-text">
+                      <p class="refer">Refer</p>
+                    </td>
+                    <td>1150</td>
+                    <td>
+                      <img
+                        class="traffic-table-img"
+                        src="./images/secondBlueChart.png"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="traffic-table-text">
+                      <p class="social">Social</p>
+                    </td>
+                    <td>980</td>
+                    <td>
+                      <img
+                        class="traffic-table-img"
+                        src="./images/yellowChart.png"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="traffic-table-text">
+                      <p class="search">Search</p>
+                    </td>
+                    <td>720</td>
+                    <td>
+                      <img
+                        class="traffic-table-img"
+                        src="./images/greenChart.png"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="traffic-table-text">
+                      <p class="internal">Internal</p>
+                    </td>
+                    <td>600</td>
+                    <td>
+                      <img
+                        class="traffic-table-img"
+                        src="./images/orangeChart.png"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="table-clothes">
+            <div class="mdc-data-table first-table">
+              <div class="mdc-data-table__table-container">
+                <table
+                  class="mdc-data-table__table"
+                >
+                  <thead>
+                    <tr class="mdc-data-table__header-row">
+                      <th
+                        class="mdc-data-table__header-cell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        PRODUCT NAME
+                      </th>
+                      <th
+                        class="mdc-data-table__header-cell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        PRODUCT CODE
+                      </th>
+                      <th
+                        class="mdc-data-table__header-cell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        STATUS
+                      </th>
+                      <th
+                        class="mdc-data-table__header-cell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        PURCHASED ON
+                      </th>
+                      <th
+                        class="mdc-data-table__header-cell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        PRICE
+                      </th>
+                      <th
+                        class="mdc-data-table__header-cell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        QUANTITY
+                      </th>
+                      <th
+                        class="mdc-data-table__header-cell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        TRAKING NO#
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="mdc-data-table__content">
+                    <tr class="mdc-data-table__row">
+                      <th class="mdc-data-table__cell" scope="row">
+                        Leisure Suit Casual
+                      </th>
+                      <td class="mdc-data-table__cell">3BSD59</td>
+                      <td class="mdc-data-table__cell paid">Paid</td>
+                      <td class="mdc-data-table__cell">27 Sep 2015</td>
+                      <td class="mdc-data-table__cell">$99.00</td>
+                      <td class="mdc-data-table__cell">2</td>
+                      <td class="mdc-data-table__cell">#BG6R9853LP</td>
+                    </tr>
+                    <tr class="mdc-data-table__row">
+                      <th class="mdc-data-table__cell" scope="row">
+                        Cotton Fleece Casual
+                      </th>
+                      <td class="mdc-data-table__cell">3BH87G</td>
+                      <td class="mdc-data-table__cell pending">Pending</td>
+                      <td class="mdc-data-table__cell">08 Sep 2015</td>
+                      <td class="mdc-data-table__cell">$99.00</td>
+                      <td class="mdc-data-table__cell">2</td>
+                      <td class="mdc-data-table__cell">#368QRM83B</td>
+                    </tr>
+                    <tr class="mdc-data-table__row">
+                      <th class="mdc-data-table__cell" scope="row">
+                        Formal Slim Fit Casual
+                      </th>
+                      <td class="mdc-data-table__cell">3BH87G</td>
+                      <td class="mdc-data-table__cell paid">Paid</td>
+                      <td class="mdc-data-table__cell">25 Aug 2015</td>
+                      <td class="mdc-data-table__cell">$99.00</td>
+                      <td class="mdc-data-table__cell">2</td>
+                      <td class="mdc-data-table__cell">#AXZ6F58T3V</td>
+                    </tr>
+                    <tr class="mdc-data-table__row">
+                      <th class="mdc-data-table__cell" scope="row">
+                        Velvet Patchwork Casual
+                      </th>
+                      <td class="mdc-data-table__cell">3BH87G</td>
+                      <td class="mdc-data-table__cell failed">Failed</td>
+                      <td class="mdc-data-table__cell">27 Sep 2015</td>
+                      <td class="mdc-data-table__cell">$99.00</td>
+                      <td class="mdc-data-table__cell">2</td>
+                      <td class="mdc-data-table__cell">#SD89HK561</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="mdc-data-table__progress-indicator">
+              <div class="mdc-data-table__scrim"></div>
+              <div
+                class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-data-table__linear-progress"
+                role="progressbar"
+                aria-label="Data is being loaded..."
+              >
+                <div class="mdc-linear-progress__buffer">
+                  <div class="mdc-linear-progress__buffer-bar"></div>
+                  <div class="mdc-linear-progress__buffer-dots"></div>
+                </div>
+                <div
+                  class="mdc-linear-progress__bar mdc-linear-progress__primary-bar"
+                >
+                  <span class="mdc-linear-progress__bar-inner"></span>
+                </div>
+                <div
+                  class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar"
+                >
+                  <span class="mdc-linear-progress__bar-inner"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second-chart">
+            <div class="site-visits">
+              <div class="second-chart-head">
+                <p>SITE VISITS ▼</p>
+                <div class="traffic-icons">
+                  <i class="material-icons">refresh</i>
+                  <i class="material-icons">keyboard_arrow_down</i>
+                  <i class="material-icons">close</i>
+                </div>
+              </div>
+              <div class="site-visits-body">
+                <canvas id="newVisitorsChart"></canvas>
+              </div>
+            </div>
+            <div class="marketing-campaign">
+              <div class="second-chart-head">
+                <p>MARKETING CAMPAIGN ▼</p>
+                <div class="traffic-icons">
+                  <i class="material-icons">refresh</i>
+                  <i class="material-icons">keyboard_arrow_down</i>
+                  <i class="material-icons">close</i>
+                </div>
+              </div>
+              <div class="marketing-campaign-body">
+                <canvas id="marketingCampaignChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </body>
+
+    <script src="bundle.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./linechart.js"></script>
+  </body>
+</html>
